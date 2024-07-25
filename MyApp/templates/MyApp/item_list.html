@@ -1,0 +1,6 @@
+{% for item in object_list %}
+<p>{{ item.get_id_and_name|default:item.get_id_and_product_name }}</p>
+<p>
+  Total Value: {{ item.get_total_value|default:item.get_total_order_value }}
+</p>
+{% endfor %}
