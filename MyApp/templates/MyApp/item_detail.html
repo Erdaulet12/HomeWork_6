@@ -1,0 +1,4 @@
+<p>{{ object.get_id_and_name|default:object.get_id_and_product_name }}</p>
+<p>
+  Total Value: {{ object.get_total_value|default:object.get_total_order_value }}
+</p>
